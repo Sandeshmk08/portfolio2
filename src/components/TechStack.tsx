@@ -13,6 +13,7 @@ import {
 import { portfolioData } from "../data/portfolioData";
 
 const textureLoader = new THREE.TextureLoader();
+const modelBase = import.meta.env.BASE_URL + "models/";
 const imageUrls = portfolioData.coreSkills;
 const textures = imageUrls.map((url) => textureLoader.load(url));
 
@@ -191,7 +192,7 @@ const TechStack = () => {
           ))}
         </Physics>
         <Environment
-          files="/models/char_enviorment.hdr"
+          files={modelBase + "char_environment.hdr"}
           environmentIntensity={0.5}
           environmentRotation={[0, 4, 2]}
         />

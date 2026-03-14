@@ -1,3 +1,5 @@
+const assetBase = import.meta.env.BASE_URL;
+
 export const portfolioData = {
   name: "Sandesh Khamkar",
   initials: "SK",
@@ -54,23 +56,23 @@ export const portfolioData = {
       category: "Lost and Found Web System",
       tools:
         "Built with HTML, CSS, JavaScript, PHP, and MySQL to let users report, search, and manage lost and found items through a simple web interface.",
-      image: "/images/reclaimhub.svg",
+      image: assetBase + "images/reclaimhub.svg",
     },
     {
       title: "Enterprise Underwriting Reports (EUR)",
       category: "Insurance Policy Management Application",
       tools:
         "Java Servlet based web application for organizing underwriting workflows, handling insurance policy data, and improving report management for enterprise use cases.",
-      image: "/images/eur.svg",
+      image: assetBase + "images/eur.svg",
     },
   ],
   coreSkills: [
-    "/images/html5.svg",
-    "/images/css3.svg",
-    "/images/javascript-skill.svg",
-    "/images/java.svg",
-    "/images/mysql-skill.svg",
-    "/images/php.svg",
+    assetBase + "images/html5.svg",
+    assetBase + "images/css3.svg",
+    assetBase + "images/javascript-skill.svg",
+    assetBase + "images/java.svg",
+    assetBase + "images/mysql-skill.svg",
+    assetBase + "images/php.svg",
   ],
   contact: {
     email: "sandesh.khamkar.dev@example.com",
